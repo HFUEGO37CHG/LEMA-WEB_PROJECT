@@ -193,6 +193,7 @@ body .hide {
 .hero h1 {
   padding-top: 220px;
   background: -webkit-linear-gradient(#fccd00, #9b4900, #faf710);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 900;
