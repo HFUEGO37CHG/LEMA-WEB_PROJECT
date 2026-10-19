@@ -1,14 +1,65 @@
-<!-- This page is for the comment section for the requirements -->
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comments</title>
+    <meta name="description"
+        content="Contact the website team with a question, correction or suggestion using an accessible comment form.">
+    <title>Comments | RealCanadianSlot</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
-<body>
 
-    <section class="selection">
-        <a href="../../index.html">Home</a>
-    </section>
+<body class="project-page">
+    <!-- Shared navigation makes it easy to move between the five pages. -->
+    <header class="site-header">
+        <div class="site-header-inner">
+            <a class="site-brand" href="../../index.html">RealCanadianSlot</a>
+            <nav class="site-navigation" aria-label="Main navigation">
+                <a href="../../index.html">Home</a>
+                <a href="slots.html">Slots</a>
+                <a href="cards.html">Cards</a>
+                <a href="sports.html">Sports</a>
+                <a href="comments.html" aria-current="page">Comments</a>
+            </nav>
+        </div>
+    </header>
+    <main class="project-wrap">
+        <!-- Accessible contact form with local-only feedback. -->
+        <section class="project-intro">
+            <h1>Contact and Comments</h1>
+            <p>Have a suggestion, a correction or a question about our educational pages? Use this form to write your
+                message.</p>
+        </section>
+        <section class="project-section">
+            <h2>Send us a comment</h2>
+            <form class="project-form" id="comment-form" action="mailto:?subject=Website%20comment" method="post"
+                enctype="text/plain">
+                <label for="comment-name">Your name</label><input id="comment-name" name="name" type="text"
+                    maxlength="80" autocomplete="name" required>
+                <label for="comment-email">Your email</label><input id="comment-email" name="email" type="email"
+                    maxlength="120" autocomplete="email" required>
+                <label for="comment-topic">Subject</label><input id="comment-topic" name="subject" type="text"
+                    maxlength="120" required>
+                <label for="comment-message">Your comment</label><textarea id="comment-message" name="message" rows="6"
+                    maxlength="2000" required></textarea>
+                <button type="submit">Open email application</button>
+            </form>
+        </section>
+        <section class="project-section">
+            <h2>What happens next?</h2>
+            <p>This HTML-only form attempts to open your default email application with the form fields. Depending on
+                your browser and email configuration, this may not work. No information is stored by this website.</p>
+            <p class="project-note">To send comments reliably, a real recipient email address and a configured server or
+                form service are required.</p>
+        </section>
+
+    </main>
+    <footer class="project-footer">
+        <div class="project-wrap">
+            <p>RealCanadianSlot | Educational guide to games and sports. No real-money play is offered here.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
