@@ -1,0 +1,309 @@
+/* ===== BASE / GLOBAL ===== */
+
+:root {
+    --project-bg: #101725;
+    --project-panel: #202d43;
+    --project-text: #f4f6fb;
+    --project-accent: #ffd47e;
+    --project-gap: 1.4rem;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: var(--project-bg);
+    color: var(--project-text);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.65;
+}
+
+body.project-page {
+    background: var(--project-bg);
+}
+
+main {
+    display: block;
+}
+
+/* ===== LAYOUT ===== */
+
+.project-wrap {
+    padding: 1rem;
+}
+
+.project-intro {
+    padding-block: 2rem;
+}
+
+.project-intro h1 {
+    font-size: 1.8rem;
+}
+
+.project-intro p {
+    max-width: 75ch;
+}
+
+.project-section {
+    margin-block: 1.3rem;
+}
+
+.project-section h2 {
+    color: var(--project-accent);
+    margin-block: 0.8rem;
+}
+
+.project-section h3 {
+    color: #fff;
+    margin-block: 0.5rem;
+}
+
+.project-grid {
+    grid-template-columns: 1fr;
+}
+
+.project-card {
+    padding: 1rem;
+}
+
+.project-card p {
+    margin-bottom: 0;
+}
+
+.project-note {
+    padding: 1rem;
+    border-left: 4px solid var(--project-accent);
+    background: var(--project-panel);
+}
+
+.project-feature-image {
+    display: block;
+    width: 100%;
+    max-width: 520px;
+    height: auto;
+    border-radius: 12px;
+}
+
+/* ===== HEADER AND NAVIGATION ===== */
+
+.site-header {
+    background: #192337;
+    border-bottom: 2px solid var(--project-accent);
+}
+
+.site-header-inner {
+    justify-content: center;
+}
+
+.site-brand {
+    font-size: 1.15rem;
+}
+
+.site-navigation {
+    justify-content: center;
+}
+
+.site-navigation a {
+    font-size: 0.85rem;
+    padding: 0.4rem 0.55rem;
+}
+
+.site-navigation a:hover {
+    background: #465c78;
+}
+
+.site-navigation a[aria-current=page] {
+    background: var(--project-accent);
+    color: #101725 !important;
+}
+
+/* ===== LINKS AND ACCESSIBILITY ===== */
+
+.project-links {
+    display: flex;
+    gap: 0.7rem;
+    flex-wrap: wrap;
+}
+
+.project-links a {
+    color: #101725;
+    background: var(--project-accent);
+    padding: 0.65rem 1rem;
+    border-radius: 7px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.project-links a:hover {
+    background: #ffe4aa;
+}
+
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible {
+    outline: 3px solid var(--project-accent);
+    outline-offset: 3px;
+}
+
+/* ===== CONTACT FORM ===== */
+
+.project-form {
+    display: grid;
+    gap: 0.6rem;
+    max-width: 680px;
+}
+
+.project-form label {
+    font-weight: bold;
+}
+
+.project-form input, .project-form textarea {
+    width: 100%;
+    border: 2px solid #8394aa;
+    border-radius: 6px;
+    padding: 0.7rem;
+    background: #fff;
+    color: #172133;
+    font: inherit;
+}
+
+.project-form button {
+    border: 0;
+    border-radius: 6px;
+    padding: 0.85rem 1.1rem;
+    font: inherit;
+    font-weight: bold;
+    color: #101725;
+    background: var(--project-accent);
+    cursor: pointer;
+}
+
+.project-form button:hover {
+    background: #ffe4aa;
+}
+
+.project-form small {
+    color: #e5e9f0;
+}
+
+/* ===== TABLES ===== */
+
+.project-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.project-table th, .project-table td {
+    padding: 0.4rem;
+}
+
+.project-table th {
+    background: #31415b;
+}
+
+/* ===== FOOTER ===== */
+
+.project-footer {
+    background: #192337;
+    border-top: 1px solid #53627a;
+}
+
+.project-footer p {
+    margin: 0;
+}
+
+/* ===== CONTENT AND IMAGES ===== */
+
+.project-section p {
+    line-height: 1.7;
+}
+
+.project-card img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+.project-card h3, .project-card h4 {
+    margin-bottom: 12px;
+}
+
+.casino-overview {
+    padding-block: 35px;
+}
+
+.casino-overview p {
+    line-height: 1.7;
+}
+
+.casino-overview .full-width-banner img.banner {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.top-casino .banner {
+    box-sizing: border-box;
+}
+
+/* ===== RESPONSIVE: TABLETS AND SMALL SCREENS ===== */
+@media (max-width: 650px) {
+    .site-header-inner {
+        justify-content: center;
+    }
+    .site-navigation {
+        justify-content: center;
+    }
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+    .project-wrap {
+        padding: 1rem;
+    }
+    .project-card {
+        padding: 1rem;
+    }
+}
+
+/* ===== RESPONSIVE: PHONES UP TO 400PX ===== */
+@media (max-width: 400px) {
+    .site-brand {
+        font-size: 1.15rem;
+    }
+    .site-navigation a {
+        font-size: 0.85rem;
+        padding: 0.4rem 0.55rem;
+    }
+    .project-intro h1 {
+        font-size: 1.8rem;
+    }
+    .project-section {
+        margin-block: 1.3rem;
+    }
+    .project-section h2 {
+        font-size: 22px;
+    }
+    .project-card h3 {
+        font-size: 19px;
+    }
+    .project-section p {
+        font-size: 15px;
+    }
+    .project-table th, .project-table td {
+        padding: 0.4rem;
+        overflow-wrap: anywhere;
+    }
+}
+
+/* ===== ACCESSIBILITY: REDUCED MOTION ===== */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
