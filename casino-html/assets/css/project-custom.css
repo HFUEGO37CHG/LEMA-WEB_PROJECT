@@ -50,6 +50,12 @@ main {
     max-width: 75ch;
 }
 
+.comments-page .project-intro p {
+    max-width: 75ch;
+    margin: 0 auto;
+    text-align: center;
+}
+
 .project-section {
     margin-block: 1.3rem;
 }
@@ -154,8 +160,10 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .project-form {
     display: grid;
     gap: 0.6rem;
-    max-width: 680px;
+    max-width: 500px;
+    margin: 0 auto;
 }
+
 
 .project-form label {
     font-weight: bold;
