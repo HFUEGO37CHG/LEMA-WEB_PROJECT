@@ -920,3 +920,10 @@ body.project-page {
 .project-nav {
   display: none;
 }
+
+#imgdefault {
+    width: 300px;
+    height: auto;
+    display: block;
+    margin: auto;
+}
