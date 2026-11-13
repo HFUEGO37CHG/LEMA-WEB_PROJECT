@@ -921,7 +921,7 @@ body.project-page {
   display: none;
 }
 
-#imgdefault {
+.imgdefault {
     width: 300px;
     height: auto;
     display: block;
